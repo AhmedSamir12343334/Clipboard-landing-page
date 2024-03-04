@@ -1,0 +1,275 @@
+/* *****************
+Imports
+***************** */
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url(fonts/BaiJamjuree-Regular.ttf);
+    font-weight: 400;
+}
+
+@font-face {
+    font-family: 'Bai Jamjuree';
+    src: url(fonts/BaiJamjuree-SemiBold.ttf);
+    font-weight: 600;
+}
+/* *****************
+Reset
+***************** */
+* , *::before , *::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Bai Jamjuree' , sans-serif;
+}
+
+a{
+    text-decoration: none;
+}
+
+ul , ol {
+    list-style: none;
+}
+
+/* *****************
+Global
+***************** */
+:root {
+--Strong-Cyan: hsl(171, 66%, 44%);
+--Light-Blue: hsl(233, 100%, 69%);
+--Dark-Grayish-Blue: hsl(210, 10%, 33%);
+--Grayish-Blue: hsl(201, 11%, 66%);
+
+}
+
+body {
+    background-image: url(images/bg-header-mobile.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-family: 'Bai Jamjuree' , sans-serif;
+    font-size: 18px;
+    text-align: center;
+}
+
+h1 , h2 , h3 {
+    color: var(--Dark-Grayish-Blue);
+}
+
+p {
+    color: var(--Grayish-Blue);
+    line-height: 1.5;
+}
+img {
+    max-width: 100%;
+}
+/* *****************
+Page Contents
+***************** */
+
+.image {
+    position: relative;
+    margin-top: 5em;
+    width: 100%;
+    
+}
+
+.container {
+    padding: 1em 1em;
+    text-align: center;
+}
+
+.container h1 {
+    font-size: 33px;
+    margin: 0.8em 0 0.5em;
+}
+
+.container p {
+    margin: 0.8em 0 0.5em;
+}
+
+.button {
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 9em;
+}
+
+.content h2 {
+    font-size: 2em;
+    margin-bottom: 1em;
+}
+
+.content p {
+    margin-bottom: 2.5em;
+    line-height: 1.5;
+    
+}
+
+.content img {
+    margin-bottom: 3em;
+}
+section .computersec {
+    display: grid;
+    grid-template-columns: repeat(1 , 1fr);
+    gap: 1em;
+    margin-bottom: 1em;
+
+}
+
+
+.comput h3  {
+    margin-bottom:  1em;
+}
+
+.comput p {
+    font-size: 19px;
+    margin-bottom: 1em;
+}
+
+
+.devices{
+    padding: 8em 1.5em 0;
+}
+  
+.devices h2 {
+    margin-bottom: 1rem;
+}
+  
+.devices p {
+    margin-bottom: 3rem;
+}
+
+
+.texts {
+    padding: auto ;
+    margin-bottom: 1em;
+}
+
+
+.texts h2 {
+    margin-bottom: 1em;
+}
+
+.texts p {
+    margin-bottom: 5em;
+}
+
+.supercharge img {
+    margin-bottom: 2em;
+}
+
+.supercharge h3 {
+
+    margin-bottom: 1em;
+}
+
+
+.logos {
+    padding: 0  1.5em 8em;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    
+}
+
+.logos img {
+    width: 8em;
+}
+
+.clipboard {
+    padding: 0  3.4em 0;
+    
+}
+
+.clipboard h2 {
+    margin-bottom: 1em;
+}
+
+.clipboard p {
+    margin-bottom: 3em;
+}
+
+.button2 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+    margin-bottom: 10em;
+}
+
+
+.logo {
+    display: flex;
+    flex-direction: column;
+    background-color: hsl( 201, 11%, 66% , 0.2);
+    padding: 4em 1.5em;
+    margin-bottom: 1em;
+}
+
+.logo img {
+    width: 4em;
+    margin-bottom: 3em;
+}
+
+.logo a {
+    background-color: transparent;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    color: var(--Dark-Grayish-Blue);
+    margin-bottom: 1em;
+}
+
+.social-media {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 2em;
+    cursor: pointer;
+    margin-top: 3em;
+
+}
+
+.social-media img {
+    width: 1.5em;
+}
+
+
+.btn-green {
+    background-color: var(--Strong-Cyan);
+    color: #fff;
+    padding: 0.9em 5em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    box-shadow: 5px 5px 10px var(--Light-Blue) , 0.4 ;
+    cursor: pointer;
+}
+
+.btn-blue {
+    background-color: var(--Light-Blue);
+    color: #fff;
+    padding: 0.9em 5em;
+    border-radius: 30px;
+    -webkit-border-radius: 30px;
+    -moz-border-radius: 30px;
+    -ms-border-radius: 30px;
+    -o-border-radius: 30px;
+    font-weight: bold;
+    border: 0;
+    outline: 0;
+    box-shadow: 5px 5px 10px var(--Light-Blue) , 0.4 ;
+    cursor: pointer; 
+}
+/* *****************
+Media
+***************** */
